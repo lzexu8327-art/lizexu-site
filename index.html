@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="李泽旭 · AI 产品经理 · 独立主导 3 个 AI 产品 0→1｜设计底色 + 创业者视角">
+  <meta property="og:title" content="LI ZEXU · AI Product Manager">
+  <meta property="og:description" content="独立主导 3 个 AI 产品 0→1｜设计底色 + 创业者视角">
+  <title>LI ZEXU · AI Product Manager</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__brand" href="#top">
+      <span class="nav__brand-name">LI ZEXU</span>
+      <span class="nav__brand-sub">· AI Product Manager</span>
+    </a>
+    <div class="nav__links" role="menubar">
+      <a href="#about" data-nav="about"><span class="mono">01</span><span>关于</span></a>
+      <a href="#projects" data-nav="projects"><span class="mono">02</span><span>项目</span></a>
+      <a href="#experience" data-nav="experience"><span class="mono">03</span><span>经历</span></a>
+      <a href="#contact" data-nav="contact"><span class="mono">04</span><span>联系</span></a>
+    </div>
+    <div class="nav__pill">2026 · ONGOING</div>
+  </nav>
+
+  <!-- ============ #00 HERO ============ -->
+  <header class="hero" id="top">
+
+    <div class="hero__head container">
+      <div class="hero__kicker">
+        <span class="tag">HI · 2026</span>
+      </div>
+      <h1 class="hero-display hero-display--greeting">你好,我是李泽旭。</h1>
+      <p class="hero__sub">AI 产品经理<span class="sep">·</span>北京<span class="sep">·</span>求职中</p>
+      <div class="hero__cta">
+        <a class="btn-primary" href="#projects"><span>看 3 个项目</span><span aria-hidden="true">→</span></a>
+        <a class="btn-ghost" href="#contact"><span>聊一聊</span></a>
+      </div>
+    </div>
+
+    <div class="folder-stack" aria-label="项目入口">
+      <!-- Folder: About -->
+      <a class="folder folder--about" href="#about" style="--x:-360px;--y:60px;--rot:-13deg;--z:1;--fx:1.4;--fy:1.2">
+        <svg class="folder__svg" viewBox="0 0 240 280" aria-hidden="true">
+          <path class="folder__tab" d="M 20 42 V 18 Q 20 6 32 6 H 92 Q 100 6 104 14 L 116 42 Z"/>
+          <rect class="folder__body" x="4" y="34" width="232" height="240" rx="16"/>
+          <path class="folder__shine" d="M 22 44 L 218 44"/>
+          <circle class="folder__dot" cx="214" cy="58" r="3"/>
+        </svg>
+        <div class="folder__label">
+          <span class="folder__label-en mono">01 · ABOUT</span>
+          <span class="folder__label-zh">关于我</span>
+        </div>
+      </a>
+
+      <!-- Folder: Shimeng -->
+      <a class="folder folder--shimeng" href="#project-shimeng" style="--x:-175px;--y:24px;--rot:-5deg;--z:3;--fx:1.0;--fy:0.8">
+        <svg class="folder__svg" viewBox="0 0 240 280" aria-hidden="true">
+          <path class="folder__tab" d="M 20 42 V 18 Q 20 6 32 6 H 92 Q 100 6 104 14 L 116 42 Z"/>
+          <rect class="folder__body" x="4" y="34" width="232" height="240" rx="16"/>
+          <path class="folder__shine" d="M 22 44 L 218 44"/>
+          <circle class="folder__dot" cx="214" cy="58" r="3"/>
+        </svg>
+        <div class="folder__label">
+          <span class="folder__label-en mono">02 · CONTENT</span>
+          <span class="folder__label-zh">拾梦</span>
+        </div>
+      </a>
+
+      <!-- Folder: Kaikailong (MAIN, center) -->
+      <a class="folder folder--kaikailong folder--main" href="#project-kaikailong" style="--x:0px;--y:-20px;--rot:-1deg;--z:5;--scale:1.12;--fx:0.6;--fy:0.5">
+        <svg class="folder__svg" viewBox="0 0 240 280" aria-hidden="true">
+          <path class="folder__tab" d="M 20 42 V 18 Q 20 6 32 6 H 92 Q 100 6 104 14 L 116 42 Z"/>
+          <rect class="folder__body" x="4" y="34" width="232" height="240" rx="16"/>
+          <path class="folder__shine" d="M 22 44 L 218 44"/>
+          <circle class="folder__dot" cx="214" cy="58" r="3"/>
+        </svg>
+        <div class="folder__label">
+          <span class="folder__label-en mono">03 · AIGC TOOL</span>
+          <span class="folder__label-zh">凯凯龙</span>
+          <span class="folder__hint">主项目 · 点击查看</span>
+        </div>
+      </a>
+
+      <!-- Folder: Agri -->
+      <a class="folder folder--agri" href="#project-agri" style="--x:175px;--y:24px;--rot:5deg;--z:3;--fx:1.0;--fy:0.8">
+        <svg class="folder__svg" viewBox="0 0 240 280" aria-hidden="true">
+          <path class="folder__tab" d="M 20 42 V 18 Q 20 6 32 6 H 92 Q 100 6 104 14 L 116 42 Z"/>
+          <rect class="folder__body" x="4" y="34" width="232" height="240" rx="16"/>
+          <path class="folder__shine" d="M 22 44 L 218 44"/>
+          <circle class="folder__dot" cx="214" cy="58" r="3"/>
+        </svg>
+        <div class="folder__label">
+          <span class="folder__label-en mono">04 · PRIVATE DOMAIN</span>
+          <span class="folder__label-zh">熟客</span>
+        </div>
+      </a>
+
+      <!-- Folder: Contact -->
+      <a class="folder folder--contact" href="#contact" style="--x:360px;--y:60px;--rot:13deg;--z:1;--fx:1.4;--fy:1.2">
+        <svg class="folder__svg" viewBox="0 0 240 280" aria-hidden="true">
+          <path class="folder__tab" d="M 20 42 V 18 Q 20 6 32 6 H 92 Q 100 6 104 14 L 116 42 Z"/>
+          <rect class="folder__body" x="4" y="34" width="232" height="240" rx="16"/>
+          <path class="folder__shine" d="M 22 44 L 218 44"/>
+          <circle class="folder__dot" cx="214" cy="58" r="3"/>
+        </svg>
+        <div class="folder__label">
+          <span class="folder__label-en mono">05 · CONTACT</span>
+          <span class="folder__label-zh">联系</span>
+        </div>
+      </a>
+
+    </div>
+  </header>
+
+  <!-- ============ #01 ABOUT ============ -->
+  <section class="section container" id="about">
+    <div class="section-head">
+      <div class="section-head__title">关于我</div>
+      <div class="section-head__tag"><span class="tag">ABOUT</span></div>
+      <div class="section-head__num mono">#01</div>
+    </div>
+
+    <div class="about">
+      <div class="about__intro">
+        <div class="about__avatar reveal">
+          <img src="assets/images/avatar.jpg" alt="李泽旭头像" loading="lazy">
+        </div>
+        <p class="about__lead reveal">
+          视觉传达本科出身,3 年设计经验打底,现在以 <span class="hl">AI 产品经理</span> 为主要方向。
+          独立做过一年农产品直播电商,跑完选品、供应链、直播、私域全链路 ——
+          这段经历让我第一次以经营者视角理解「需求」,不是功能清单,是真实的业务卡点。
+        </p>
+      </div>
+
+      <div class="about__grid">
+        <article class="about__card reveal">
+          <div class="about__card-head">
+            <span class="mono">01</span>
+            <h3>产品主导力</h3>
+          </div>
+          <p>独立主导 3 个 AI 产品从 0 到 1,覆盖 <strong>AIGC 工具 / 私域 Agent / 内容平台</strong> 三个方向。完整输出竞品分析、PRD、用户流程、商业模式与数据指标体系。</p>
+        </article>
+
+        <article class="about__card reveal">
+          <div class="about__card-head">
+            <span class="mono">02</span>
+            <h3>技术判断力</h3>
+          </div>
+          <p>做过 SD+ControlNet+LoRA、通义万相、Gemini 多模态横评,从 IP 一致性、姿态稳定性、多图融合等维度拍板技术路线 —— 而不是跟风选型。</p>
+        </article>
+
+        <article class="about__card reveal">
+          <div class="about__card-head">
+            <span class="mono">03</span>
+            <h3>业务敏感度</h3>
+          </div>
+          <p>独立做过一年农产品直播电商,一人身兼选品 / 直播 / 私域。<strong>从卖货人变成产品人</strong>,对"哪些场景真的需要 AI"有更硬的判断。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ #02 PROJECTS ============ -->
+  <section class="section container" id="projects">
+    <div class="section-head">
+      <div class="section-head__title">项目</div>
+      <div class="section-head__tag"><span class="tag">PROJECTS</span></div>
+      <div class="section-head__num mono">#02</div>
+    </div>
+
+    <div class="grid-projects">
+
+      <!-- Project 1: 凯凯龙 (Feature) -->
+      <article class="project-card project-card--feature reveal" id="project-kaikailong">
+        <div class="project-card__media project-card__media--kkl" data-project="kaikailong">
+          <img class="kkl-hero" src="assets/images/kaikailong-picnic.png" alt="凯凯龙 IP · 春日野餐场景" loading="lazy">
+          <div class="kkl-overlay">
+            <div class="kkl-tags">
+              <span class="kkl-tag">IP</span>
+              <span class="kkl-tag">KV</span>
+              <span class="kkl-tag">3D</span>
+              <span class="kkl-tag">POSTER</span>
+            </div>
+            <div class="kkl-caption mono">ONE CHARACTER · MANY SCENES</div>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta">
+            <span class="tag">AIGC 工具</span>
+            <span class="tag">B 端 · 内部工具</span>
+            <span class="mono dim">2024.03 — 2025.03</span>
+          </div>
+          <h3 class="project-card__title">凯凯龙 IP 数字化生产工具</h3>
+          <p class="project-card__org">产品负责人 · 红星美凯龙(北京)</p>
+          <p class="project-card__desc">
+            在无专项预算、无上级指派条件下主动识别 3D IP 素材生产瓶颈。独立完成
+            <em>SD+ControlNet+LoRA / 通义万相 / Gemini 多模态</em> 三方案横评,拍板 ComfyUI 标准化 AIGC 工作流,
+            扩展完整 KV 合成与多尺寸导出模块,打包为本地软件供团队复用。
+          </p>
+          <div class="metrics">
+            <div class="metric">
+              <div class="metric__value mono">3-7d → 1d</div>
+              <div class="metric__label">交付周期</div>
+            </div>
+            <div class="metric">
+              <div class="metric__value mono">¥15-20w</div>
+              <div class="metric__label">年省外包预算</div>
+            </div>
+            <div class="metric">
+              <div class="metric__value mono">20+</div>
+              <div class="metric__label">年度活动节点</div>
+            </div>
+          </div>
+          <button class="project-card__expand" type="button" data-modal-open="kaikailong">
+            <span>查看完整案例</span>
+            <span class="project-card__expand-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Project 2: 拾梦 -->
+      <article class="project-card reveal" id="project-shimeng">
+        <div class="project-card__media project-card__media--shimeng" data-project="shimeng">
+          <img src="assets/images/shimeng-cover.png" alt="拾梦平台主页" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-fallback')">
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta">
+            <span class="tag">内容平台</span>
+            <span class="tag">C 端 · AIGC</span>
+            <span class="mono dim">2026.02 — 至今</span>
+          </div>
+          <h3 class="project-card__title">拾梦</h3>
+          <p class="project-card__tagline">AI 形象 × 同人故事 · 沉浸式内容平台</p>
+          <p class="project-card__org">产品负责人 · 团队项目</p>
+          <p class="project-card__desc">
+            将 AI 形象生成 + AI 同人故事创作融合为沉浸式体验,切入古风 IP 爱好者"代入感"需求的空白地带。
+            输出完整 PRD 覆盖 6 大模块、主/异常流程与非功能性需求,设计 6 层核心转化漏斗。
+          </p>
+          <div class="metrics metrics--compact">
+            <div class="metric">
+              <div class="metric__value mono">3</div>
+              <div class="metric__label">古风 IP 已上线</div>
+            </div>
+            <div class="metric">
+              <div class="metric__value mono">PH</div>
+              <div class="metric__label">Product Hunt</div>
+            </div>
+          </div>
+          <div class="project-card__actions">
+            <a class="project-card__link link" href="http://www.shimeng.asia/" target="_blank" rel="noopener">访问 shimeng.asia →</a>
+            <button class="project-card__expand" type="button" data-modal-open="shimeng">
+              <span>查看完整案例</span>
+              <span class="project-card__expand-arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: 农产品 AI 话术助手 -->
+      <article class="project-card project-card--text reveal" id="project-agri">
+        <div class="project-card__media project-card__media--phone">
+          <div class="phone">
+            <div class="phone__status">
+              <span class="mono">9:41</span>
+              <span class="phone__status-icons">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </span>
+            </div>
+            <div class="phone__bar">
+              <div class="phone__avatar">张</div>
+              <div class="phone__who">
+                <div class="phone__name">老张</div>
+                <div class="phone__meta">已购 3 次 · 15 天前买过红富士</div>
+              </div>
+              <div class="phone__more">⋯</div>
+            </div>
+            <div class="chat">
+              <div class="chat-bubble chat-bubble--user">
+                <p>那红富士还挺不错的</p>
+              </div>
+              <div class="chat-ai-tag">
+                <span class="spark">✦</span>
+                <span>熟客 · AI 生成</span>
+              </div>
+              <div class="chat-bubble chat-bubble--ai">
+                <p>老张~ 之前那箱红富士都吃完啦?最近到了今年头茬<strong>脆枣</strong>,脆甜脆甜的,想着你上次提过喜欢脆口的,给你留了两箱~</p>
+              </div>
+            </div>
+            <div class="phone__input">
+              <span class="phone__input-placeholder">填空生成 · 复购提醒 / 新品推荐 / 节日问候</span>
+              <span class="phone__send">→</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta">
+            <span class="tag">私域 Agent</span>
+            <span class="tag">复购链路</span>
+            <span class="mono dim">2025.09 — 2026.01</span>
+          </div>
+          <h3 class="project-card__title">熟客</h3>
+          <p class="project-card__tagline">农产品私域复购运营链路</p>
+          <p class="project-card__org">独立产品设计 · 个人项目</p>
+          <p class="project-card__desc">
+            从做农产品直播电商时的私域瓶颈里长出来 —— 不是一个"话术生成器",
+            是一条 <em>客户档案 → 场景识别 → 话术生成 → 复购追踪</em> 的完整链路。
+            V1.0 PRD、竞品分析、Prompt 工程、三阶段迭代路线均已完成。
+          </p>
+          <div class="metrics metrics--compact">
+            <div class="metric">
+              <div class="metric__value mono">V1 → V3</div>
+              <div class="metric__label">三阶段链路规划</div>
+            </div>
+            <div class="metric">
+              <div class="metric__value mono">PRD</div>
+              <div class="metric__label">V1.0 完整交付</div>
+            </div>
+          </div>
+          <button class="project-card__expand" type="button" data-modal-open="agritalk">
+            <span>查看完整案例</span>
+            <span class="project-card__expand-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ #03 EXPERIENCE ============ -->
+  <section class="section container" id="experience">
+    <div class="section-head">
+      <div class="section-head__title">经历</div>
+      <div class="section-head__tag"><span class="tag">EXPERIENCE</span></div>
+      <div class="section-head__num mono">#03</div>
+    </div>
+
+    <div class="timeline">
+      <article class="timeline-item reveal">
+        <div class="timeline-item__date">2025</div>
+        <div class="timeline-item__rail" aria-hidden="true"></div>
+        <div class="timeline-item__body">
+          <h3 class="timeline-item__role">创始人 · 农产品直播电商</h3>
+          <p class="timeline-item__org">自主创业</p>
+          <p class="timeline-item__desc">
+            独立跑完选品、供应链、直播、商品视觉、私域运营全链路。
+            第一次以经营者视角理解用户需求与商业运转逻辑 ——
+            这段经历直接驱动了后续「熟客」私域复购链路的产品设计。
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
+        <div class="timeline-item__date">2024</div>
+        <div class="timeline-item__rail" aria-hidden="true"></div>
+        <div class="timeline-item__body">
+          <h3 class="timeline-item__role">AI 产品经理 · 视觉方向</h3>
+          <p class="timeline-item__org">红星美凯龙(北京)</p>
+          <p class="timeline-item__desc">
+            在无预算、无指派条件下主动识别 3D IP 素材生产瓶颈,独立完成三方案技术横评,
+            搭建 ComfyUI 标准化 AIGC 工作流。同期负责商场全年 20+ 活动节点视觉设计与落地,
+            独立主导北京时光音乐节视觉全案。
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
+        <div class="timeline-item__date">2022</div>
+        <div class="timeline-item__rail" aria-hidden="true"></div>
+        <div class="timeline-item__body">
+          <h3 class="timeline-item__role">视觉设计</h3>
+          <p class="timeline-item__org">酷我音乐</p>
+          <p class="timeline-item__desc">
+            负责功能歌单 Banner 日常设计。针对高频出图需求主动搭建模块化素材库系统,
+            将 Banner 拆解为标题、底色、主视觉、排版四层可复用模块,出图时效从 30 分钟压缩至 10 分钟。
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ #04 CONTACT ============ -->
+  <section class="section-contact" id="contact">
+    <div class="container">
+      <div class="section-head section-head--dark">
+        <div class="section-head__title">联系</div>
+        <div class="section-head__tag"><span class="tag tag--dark">CONTACT</span></div>
+        <div class="section-head__num mono">#04</div>
+      </div>
+
+      <div class="contact">
+        <h2 class="contact__headline">
+          <span class="contact__kicker">聊一聊</span>
+          <span class="contact__main">想聊聊 AI 产品、<br>或者一起做点什么。</span>
+        </h2>
+
+        <div class="contact__actions">
+          <a class="btn-primary btn-primary--invert" href="mailto:2502585436@qq.com">
+            <span>发邮件</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a class="btn-ghost btn-ghost--invert" href="mailto:2502585436@qq.com">
+            <span class="mono">2502585436@qq.com</span>
+          </a>
+        </div>
+
+        <div class="contact__meta">
+          <div>
+            <div class="contact__meta-label">位置</div>
+            <div>北京</div>
+          </div>
+          <div>
+            <div class="contact__meta-label">身份</div>
+            <div>AI 产品经理</div>
+          </div>
+          <div>
+            <div class="contact__meta-label">状态</div>
+            <div>求职中 · 期待聊聊</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer container">
+      <div class="footer__left">© 2026 李泽旭</div>
+      <a class="footer__right back-to-top" href="#top" aria-label="回到顶部">
+        <span>回到顶部</span>
+        <span class="back-to-top__arrow" aria-hidden="true">↑</span>
+      </a>
+    </footer>
+  </section>
+
+  <!-- ============ PROJECT DETAIL MODAL ============ -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-modal-close></div>
+    <article class="modal__dialog" role="document">
+      <button class="modal__close" type="button" data-modal-close aria-label="关闭弹窗">
+        <span aria-hidden="true">✕</span>
+      </button>
+      <div class="modal__content" id="modal-content"><!-- injected --></div>
+    </article>
+  </div>
+
+  <!-- ============ PROJECT DETAIL TEMPLATES ============ -->
+  <template data-modal="kaikailong">
+    <header class="md__head">
+      <div class="md__num mono">#01 · FEATURE CASE</div>
+      <h2 class="md__title" id="modal-title">凯凯龙 IP 数字化生产工具</h2>
+      <p class="md__sub">以 ComfyUI 为中枢的 AIGC 标准化工作流,把 3D IP 素材从外包依赖变成团队自有能力。</p>
+      <div class="md__meta">
+        <span class="tag">AIGC 工具</span>
+        <span class="tag">B 端 · 内部工具</span>
+        <span class="tag">产品负责人</span>
+        <span class="mono dim">2024.03 — 2025.03 · 红星美凯龙</span>
+      </div>
+    </header>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">01</span><h3>项目背景</h3></div>
+      <p>红星美凯龙「凯凯龙」IP 每年需在 20+ 活动节点产出不同风格的 3D 海报、KV 与周边素材。
+      传统外包链路成本高、周期长达 3-7 天、且风格不统一 —— 是一个看得见但无人处理的业务瓶颈。</p>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">02</span><h3>切入方式</h3></div>
+      <p>在 <em>无专项预算、无上级指派</em> 的前提下,自下而上推动。从设计师视角识别痛点,
+      以产品经理视角定义解决路径,以创业者视角拍板资源投入 —— 独立完成从需求发现到项目落地的完整闭环。</p>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">03</span><h3>三方案横评</h3></div>
+      <div class="md__table">
+        <div class="md__row md__row--head">
+          <div>方案</div><div>灵活度</div><div>风格一致性</div><div>门槛</div><div>结论</div>
+        </div>
+        <div class="md__row">
+          <div><strong>SD + ControlNet + LoRA</strong></div>
+          <div class="mono">高</div><div class="mono">★★★★</div><div class="mono">高</div>
+          <div class="md__badge md__badge--win">选定</div>
+        </div>
+        <div class="md__row">
+          <div>通义万相</div>
+          <div class="mono">中</div><div class="mono">★★★</div><div class="mono">低</div>
+          <div class="dim">备选</div>
+        </div>
+        <div class="md__row">
+          <div>Gemini 多模态</div>
+          <div class="mono">低</div><div class="mono">★★</div><div class="mono">低</div>
+          <div class="dim">淘汰</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">04</span><h3>核心功能</h3></div>
+      <ol class="md__list">
+        <li><strong>ComfyUI 标准化工作流</strong> — IP 形象生成、姿态控制、风格迁移,模板化保障一致性。</li>
+        <li><strong>KV 合成模块</strong> — 主体 + 场景 + 文案自动叠合,非设计人员也能出图。</li>
+        <li><strong>多尺寸批量导出</strong> — 横屏 KV / 方形海报 / 竖屏物料 一键输出。</li>
+        <li><strong>本地软件交付</strong> — 封装为离线工具,团队 3 人独立使用,不依赖外部服务。</li>
+      </ol>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">05</span><h3>成果</h3></div>
+      <div class="metrics">
+        <div class="metric"><div class="metric__value mono">3-7d → 1d</div><div class="metric__label">交付周期</div></div>
+        <div class="metric"><div class="metric__value mono">¥15-20w</div><div class="metric__label">年省外包预算</div></div>
+        <div class="metric"><div class="metric__value mono">20+</div><div class="metric__label">年度活动节点</div></div>
+      </div>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">06</span><h3>反思</h3></div>
+      <p>识别业务痛点比掌握技术更难。设计师视角让我看见流程里的卡点,产品经理视角让我定义可落地的方案,
+      创业者视角让我敢于在没有资源的前提下推动变化 —— 这套复合视角是 AI 时代 PM 的核心竞争力。</p>
+    </section>
+  </template>
+
+  <template data-modal="shimeng">
+    <header class="md__head">
+      <div class="md__num mono">#02 · CONTENT PLATFORM</div>
+      <h2 class="md__title" id="modal-title">拾梦</h2>
+      <p class="md__sub">AI 形象 × AI 同人故事 —— 切入古风 IP「代入感」空白地带的沉浸式内容平台。</p>
+      <div class="md__meta">
+        <span class="tag">内容平台</span>
+        <span class="tag">C 端 · AIGC</span>
+        <span class="tag">产品负责人</span>
+        <span class="mono dim">2026.02 — 至今 · 团队项目</span>
+      </div>
+    </header>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">01</span><h3>用户洞察</h3></div>
+      <p>古风 IP(《狐妖小红娘》《天官赐福》等)的死忠群体不再满足于被动消费官方内容,
+      他们想「我就是其中的角色」。现有同人创作门槛高(需绘画/写作能力),AI 降低门槛后存在明显市场空白。</p>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">02</span><h3>产品定位</h3></div>
+      <p>以 <em>AI 形象生成 + AI 同人故事创作</em> 双引擎,构建沉浸式古风世界观内容生产平台。
+      用户不是读者,也不是作者 —— 是自己 IP 世界里的主角。</p>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">03</span><h3>6 大核心模块</h3></div>
+      <div class="md__grid2">
+        <div class="md__cell"><span class="mono dim">M1</span><strong>AI 形象生成</strong><p>古风世界观下的角色形象自定义</p></div>
+        <div class="md__cell"><span class="mono dim">M2</span><strong>AI 同人故事</strong><p>基于 IP 世界观的分支剧情生成</p></div>
+        <div class="md__cell"><span class="mono dim">M3</span><strong>IP 世界观库</strong><p>角色/场景/设定结构化数据</p></div>
+        <div class="md__cell"><span class="mono dim">M4</span><strong>社区互动</strong><p>评论、二创、角色扮演</p></div>
+        <div class="md__cell"><span class="mono dim">M5</span><strong>付费内容</strong><p>订阅、打赏、专属剧情</p></div>
+        <div class="md__cell"><span class="mono dim">M6</span><strong>创作者激励</strong><p>优质二创曝光与分成</p></div>
+      </div>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">04</span><h3>6 层转化漏斗</h3></div>
+      <p>落地 → 试用 → 注册 → 首次创作 → 分享 → 付费。每层都有独立的引导文案、埋点与转化节点设计。
+      漏斗驱动 PRD 覆盖主流程 + 异常流程 + 非功能性需求共 6 大模块。</p>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">05</span><h3>当前进展</h3></div>
+      <div class="metrics metrics--compact">
+        <div class="metric"><div class="metric__value mono">3 IP</div><div class="metric__label">古风 IP 已上线</div></div>
+        <div class="metric"><div class="metric__value mono">PH</div><div class="metric__label">Product Hunt 发布</div></div>
+      </div>
+      <p class="md__link-row">
+        <a class="link" href="http://www.shimeng.asia/" target="_blank" rel="noopener">访问 shimeng.asia →</a>
+      </p>
+    </section>
+  </template>
+
+  <template data-modal="agritalk">
+    <header class="md__head">
+      <div class="md__num mono">#03 · PRIVATE DOMAIN</div>
+      <h2 class="md__title" id="modal-title">熟客</h2>
+      <p class="md__sub">农产品私域复购运营链路 —— 把「一次成交」变成「长期熟客」。</p>
+      <div class="md__meta">
+        <span class="tag">私域 Agent</span>
+        <span class="tag">复购链路</span>
+        <span class="tag">独立产品设计</span>
+        <span class="mono dim">2025.09 — 2026.01 · 个人项目</span>
+      </div>
+    </header>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">01</span><h3>项目起源</h3></div>
+      <p>2025 年我独立做了一年农产品直播电商。一个人跑完选品、供应链、直播、客服、
+      复购提醒、私域运营全链路。最深的痛点是 —— 同一套话术要对不同客户手动改发,
+      效率极低、转化不稳、人脑记不住 300+ 客户的口味偏好。
+      所以熟客不是一个"话术生成器" —— 谁都能生成话术 —— 它是一条
+      <em>客户档案 → 场景识别 → 话术生成 → 复购追踪</em> 的完整链路。</p>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">02</span><h3>竞品分析与差异化</h3></div>
+      <p>豆包、DeepSeek 等通用 AI 助手在这个场景有 4 个核心局限:</p>
+      <ul class="md__list">
+        <li><strong>不了解具体客户</strong> —— 不知道你这个客户买过什么、性格如何</li>
+        <li><strong>生成通用模板</strong> —— 所有农产品卖家拿到的输出长得一样</li>
+        <li><strong>需要用户自写 Prompt</strong> —— 使用门槛高,小商家跑不起来</li>
+        <li><strong>无农产品场景垂直优化</strong> —— 缺少节气、时令、复购节奏的感知</li>
+      </ul>
+      <p>熟客的切入点:<strong>垂直场景深度优化 + 极简交互</strong>。不正面打通用 AI,通过场景化 Prompt 工程降低使用门槛。</p>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">03</span><h3>目标用户 & 场景</h3></div>
+      <p>个人或小团队农产品直播电商经营者 —— 微信私域沉淀客户、无专职运营、一人身兼多职、客户量 50 人以内。
+      三大核心场景:</p>
+      <div class="md__grid2">
+        <div class="md__cell"><span class="mono dim">S1</span><strong>复购提醒</strong><p>老客户周期性唤醒,每人历史、口味不同</p></div>
+        <div class="md__cell"><span class="mono dim">S2</span><strong>新品推荐</strong><p>精准匹配客户偏好,避免群发机械感</p></div>
+        <div class="md__cell"><span class="mono dim">S3</span><strong>节日问候</strong><p>批量但有温度,人情味是转化关键</p></div>
+      </div>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">04</span><h3>产品方案</h3></div>
+      <p><em>「填空式表单 + AI 生成」</em> 极简交互:</p>
+      <ol class="md__list">
+        <li>选场景(复购 / 新品 / 节日)</li>
+        <li>填入客户昵称、上次购买品类、客户特点、本次目的</li>
+        <li>AI 基于场景 Prompt 生成可直接复制发送的一对一话术</li>
+        <li>话术自动融入客户昵称、购买记录、性格特点,有温度有针对性</li>
+      </ol>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">05</span><h3>三阶段链路规划</h3></div>
+      <div class="md__table">
+        <div class="md__row md__row--head">
+          <div>版本</div><div>核心能力</div><div>状态</div>
+        </div>
+        <div class="md__row">
+          <div class="mono"><strong>V1.0</strong></div>
+          <div>填空表单验证核心假设</div>
+          <div class="md__badge md__badge--win">PRD 完成</div>
+        </div>
+        <div class="md__row">
+          <div class="mono"><strong>V2.0</strong></div>
+          <div>客户档案系统,生成时自动读取历史</div>
+          <div class="dim">需求已设计</div>
+        </div>
+        <div class="md__row">
+          <div class="mono"><strong>V3.0</strong></div>
+          <div>接入企业微信 API,复购意向识别、批量话术</div>
+          <div class="dim">路线已规划</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="md__block">
+      <div class="md__block-head"><span class="mono">06</span><h3>反思</h3></div>
+      <p>路线不是从技术出发,是从一线能力边界倒推的。V1.0 不以打败通用 AI 为目标,
+      通过场景 Prompt 优化降低使用门槛,做小而垂直的一块;差异化壁垒 —— 客户档案 + 企微链路 ——
+      放在 V2、V3 逐步建立。<strong>先把最小核心价值跑通,再谈链路完整性。</strong></p>
+    </section>
+  </template>
+
+  <script src="app.js"></script>
+
+  <!-- ============ 小贾 · 问候气泡样式 ============ -->
+  <style>
+    .xj-greeting {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 270px;
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 16px 18px 14px;
+      box-shadow: 0 6px 24px rgba(10,10,10,0.12), 0 2px 8px rgba(10,10,10,0.06);
+      border: 1px solid rgba(0,0,0,0.06);
+      font-family: 'Inter', 'Noto Sans SC', sans-serif;
+      font-size: 14px;
+      color: #1a1a1a;
+      z-index: 999;
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: opacity 400ms cubic-bezier(0.22,0.61,0.36,1),
+                  transform 400ms cubic-bezier(0.22,0.61,0.36,1);
+      cursor: pointer;
+    }
+    .xj-greeting.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .xj-greeting:hover {
+      box-shadow: 0 10px 36px rgba(10,10,10,0.16), 0 4px 12px rgba(10,10,10,0.08);
+      transform: translateY(-2px);
+    }
+    .xj-greeting::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      right: 28px;
+      width: 12px;
+      height: 12px;
+      background: #ffffff;
+      transform: rotate(45deg);
+      border-right: 1px solid rgba(0,0,0,0.06);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .xj-greeting__close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      border: none;
+      background: transparent;
+      width: 24px;
+      height: 24px;
+      font-size: 18px;
+      line-height: 1;
+      color: #999;
+      cursor: pointer;
+      padding: 0;
+      border-radius: 50%;
+      transition: background 200ms, color 200ms;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .xj-greeting__close:hover {
+      background: rgba(0,0,0,0.06);
+      color: #333;
+    }
+    .xj-greeting__hi {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 6px;
+      padding-right: 20px;
+    }
+    .xj-greeting__wave {
+      font-size: 18px;
+      animation: xj-wave 2.2s ease-in-out infinite;
+      display: inline-block;
+      transform-origin: 70% 70%;
+    }
+    @keyframes xj-wave {
+      0%, 60%, 100% { transform: rotate(0); }
+      10% { transform: rotate(14deg); }
+      20% { transform: rotate(-8deg); }
+      30% { transform: rotate(14deg); }
+      40% { transform: rotate(-4deg); }
+      50% { transform: rotate(10deg); }
+    }
+    .xj-greeting__hi strong {
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .xj-greeting__text {
+      margin: 0 0 8px;
+      line-height: 1.55;
+      color: #555;
+    }
+    .xj-greeting__hint {
+      font-size: 11px;
+      color: #999;
+      font-family: 'JetBrains Mono', 'SF Mono', monospace;
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: 768px) {
+      .xj-greeting {
+        bottom: 86px;
+        right: 14px;
+        width: 240px;
+        font-size: 13px;
+        padding: 14px 16px 12px;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .xj-greeting {
+        transition: opacity 200ms ease;
+        transform: none !important;
+      }
+      .xj-greeting__wave { animation: none; }
+    }
+  </style>
+
+  <!-- ============ 小贾 · 问候气泡 ============ -->
+  <div id="xiaojia-greeting" class="xj-greeting" role="status" aria-live="polite">
+    <button class="xj-greeting__close" aria-label="关闭">×</button>
+    <div class="xj-greeting__hi">
+      <span class="xj-greeting__wave">👋</span>
+      <strong>我是小贾</strong>
+    </div>
+    <p class="xj-greeting__text">李泽旭的 AI 助手，关于他的项目、经历、能力匹配，都可以问我。</p>
+    <div class="xj-greeting__hint">点我 / 右下气泡开聊 ↘</div>
+  </div>
+
+  <!-- ============ COZE CHAT SDK · 小贾 ============ -->
+  <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+  <script>
+    (function() {
+      // 自动识别设备:手机 vs 电脑,防止对话框在手机上被截断
+      var isMobileDevice = window.innerWidth <= 768 ||
+                           /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      // 手机用短标题,避免被窄屏幕裁掉
+      var chatTitle = isMobileDevice ? '小贾 · AI 助手' : '小贾 · 李泽旭的 AI 助手';
+
+      window.xjChatInstance = new CozeWebSDK.WebChatClient({
+        config: {
+          type: 'bot',
+          bot_id: '7630750193226629155',
+        },
+        componentProps: {
+          title: chatTitle,
+        },
+        auth: {
+          type: 'token',
+          token: 'pat_daZOWPfUG1wlPQsbNg00C3uLvQKJBMfBwyV2VN5F4Wuk2LF8pKcYX2I3XHTSOJWN',
+          onRefreshToken: function () {
+            return 'pat_daZOWPfUG1wlPQsbNg00C3uLvQKJBMfBwyV2VN5F4Wuk2LF8pKcYX2I3XHTSOJWN'
+          }
+        },
+        ui: {
+          base: {
+            layout: isMobileDevice ? 'mobile' : 'pc',
+            lang: 'zh-CN',
+            zIndex: 1000
+          },
+          chatBot: {
+            width: isMobileDevice ? undefined : 400
+          }
+        }
+      });
+    })();
+  </script>
+
+  <!-- ============ 问候气泡交互逻辑 ============ -->
+  <script>
+    (function() {
+      // 本次会话已关闭过就不再显示
+      try {
+        if (sessionStorage.getItem('xj-greeting-dismissed') === '1') return;
+      } catch (e) { /* 隐身模式等情况下 sessionStorage 不可用，忽略 */ }
+
+      var greeting = document.getElementById('xiaojia-greeting');
+      if (!greeting) return;
+      var closeBtn = greeting.querySelector('.xj-greeting__close');
+      var hideTimer = null;
+      var autoHideTimer = null;
+
+      function hideGreeting() {
+        if (autoHideTimer) clearTimeout(autoHideTimer);
+        greeting.classList.remove('is-visible');
+        try { sessionStorage.setItem('xj-greeting-dismissed', '1'); } catch (e) {}
+      }
+
+      function openChat() {
+        // 尝试调用 Coze SDK 打开对话框
+        if (window.xjChatInstance && typeof window.xjChatInstance.showChatBot === 'function') {
+          window.xjChatInstance.showChatBot();
+        }
+        hideGreeting();
+      }
+
+      // 关闭按钮
+      closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        hideGreeting();
+      });
+
+      // 点击气泡本体直接打开聊天
+      greeting.addEventListener('click', function() {
+        openChat();
+      });
+
+      // 3 秒后显示
+      setTimeout(function() {
+        greeting.classList.add('is-visible');
+        // 12 秒后自动隐藏
+        autoHideTimer = setTimeout(hideGreeting, 12000);
+      }, 3000);
+    })();
+  </script>
+
+</body>
+</html>

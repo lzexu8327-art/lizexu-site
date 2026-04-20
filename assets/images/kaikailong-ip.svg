@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" role="img" aria-label="凯凯龙 IP 形象">
+  <defs>
+    <radialGradient id="kkl-bg" cx="50%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#F0F4FF"/>
+      <stop offset="100%" stop-color="#CFDAFF"/>
+    </radialGradient>
+  </defs>
+  <rect width="500" height="600" fill="url(#kkl-bg)"/>
+
+  <g stroke="#0A0A0A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- Antler stems (pink) -->
+    <line x1="200" y1="120" x2="188" y2="85" stroke="#F5A9BC" stroke-width="14"/>
+    <line x1="300" y1="120" x2="312" y2="85" stroke="#F5A9BC" stroke-width="14"/>
+
+    <!-- Left heart antler (two bumps with top dip, pointed bottom) -->
+    <path d="M172 115 Q128 90 120 62 Q120 36 144 36 Q164 36 172 60 Q180 36 200 36 Q224 36 224 62 Q216 90 172 115 Z" fill="#F5A9BC"/>
+
+    <!-- Right heart antler -->
+    <path d="M294 115 Q250 90 242 62 Q242 36 266 36 Q286 36 294 60 Q302 36 322 36 Q346 36 346 62 Q338 90 294 115 Z" fill="#F5A9BC"/>
+
+    <!-- Body (blue pear/teardrop) -->
+    <path d="M100 290 C78 215 130 135 250 135 C370 135 422 215 400 290 C420 380 360 515 250 515 C140 515 80 380 100 290 Z" fill="#1A62C9"/>
+
+    <!-- Tail (pink stub at bottom-left) -->
+    <g>
+      <path d="M88 455 L66 475 L55 485 L72 470 Z" fill="#F5A9BC"/>
+      <path d="M65 478 L52 492" stroke="#1A62C9" stroke-width="7"/>
+    </g>
+
+    <!-- Face (cream oval) -->
+    <ellipse cx="250" cy="235" rx="100" ry="95" fill="#FCEEE0"/>
+
+    <!-- Eyebrows — blue heart strokes (^^) -->
+    <path d="M186 205 L194 193 L202 205 L210 193 L218 205" fill="none" stroke="#1A62C9" stroke-width="8"/>
+    <path d="M282 205 L290 193 L298 205 L306 193 L314 205" fill="none" stroke="#1A62C9" stroke-width="8"/>
+
+    <!-- Eyes (black dots) -->
+    <circle cx="208" cy="240" r="9" fill="#0A0A0A" stroke="none"/>
+    <circle cx="292" cy="240" r="9" fill="#0A0A0A" stroke="none"/>
+
+    <!-- Cheek blush -->
+    <ellipse cx="186" cy="272" rx="20" ry="13" fill="#F5A9BC" opacity="0.7" stroke="none"/>
+    <ellipse cx="314" cy="272" rx="20" ry="13" fill="#F5A9BC" opacity="0.7" stroke="none"/>
+
+    <!-- Nose (small blue triangle) -->
+    <path d="M242 268 L258 268 L250 280 Z" fill="#1A62C9" stroke-width="2"/>
+
+    <!-- Mouth (open smile, pink inside) -->
+    <path d="M224 292 Q250 318 276 292 Q276 308 250 314 Q224 308 224 292 Z" fill="#F5A9BC"/>
+
+    <!-- Belly oval (cream) -->
+    <ellipse cx="250" cy="415" rx="92" ry="70" fill="#FCEEE0"/>
+
+  </g>
+</svg>
